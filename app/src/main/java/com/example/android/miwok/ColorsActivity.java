@@ -33,14 +33,14 @@ public class ColorsActivity extends AppCompatActivity {
 
         //create a new object word
 
-        Words.add(new Word("Red","Nyekundu"));
-        Words.add(new Word("Green","Kijani"));
-        Words.add(new Word("Brown","hudhurungi"));
-        Words.add(new Word("Gray","Kijivu"));
-        Words.add(new Word("Black","Nyeusi"));
-        Words.add(new Word("White","Nyeupe"));
-        Words.add(new Word("Dust yellow", "Vumbi njano"));
-        Words.add(new Word("Mustard yellow","Haradali njano"));
+        Words.add(new Word("Red","Nyekundu",R.drawable.color_red));
+        Words.add(new Word("Green","Kijani",R.drawable.color_green));
+        Words.add(new Word("Brown","hudhurungi",R.drawable.color_brown));
+        Words.add(new Word("Gray","Kijivu",R.drawable.color_gray));
+        Words.add(new Word("Black","Nyeusi",R.drawable.color_black));
+        Words.add(new Word("White","Nyeupe",R.drawable.color_white));
+        Words.add(new Word("Dust yellow", "Vumbi njano",R.drawable.color_dusty_yellow));
+        Words.add(new Word("Mustard yellow","Haradali njano",R.drawable.color_mustard_yellow));
 
 
         //Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
@@ -48,7 +48,7 @@ public class ColorsActivity extends AppCompatActivity {
         // simple_list_item_1.xml layout resource defined in the Android framework.
         // This list item layout contains a single {@link TextView}, which the adapter will set to
         // display a single word.
-        WordAdapter Adapter = new WordAdapter(this,Words);
+        WordAdapter Adapter = new WordAdapter(this,Words,R.color.category_colors);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the

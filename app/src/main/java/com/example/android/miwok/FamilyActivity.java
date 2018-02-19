@@ -31,23 +31,23 @@ public class FamilyActivity extends AppCompatActivity {
         // Create a list of words
         ArrayList<Word> Words = new ArrayList<Word>();
         //create a new object word
-        Words.add(new Word("Baba","Father"));
-        Words.add(new Word("Mama","Mother"));
-        Words.add(new Word("Mwana","son"));
-        Words.add(new Word("Binti","Daughter"));
-        Words.add(new Word("Kaka mkubwa","Older brother"));
-        Words.add(new Word("Kaka mdogo","Younger brother"));
-        Words.add(new Word("Dada Mkubwa","Older sister"));
-        Words.add(new Word("Dada mdogo","Younger sister"));
-        Words.add(new Word("bibi","Grandmother"));
-        Words.add(new Word("Babu","Grangfather"));
+        Words.add(new Word("Baba","Father",R.drawable.family_father));
+        Words.add(new Word("Mama","Mother",R.drawable.family_mother));
+        Words.add(new Word("Mwana","son",R.drawable.family_son));
+        Words.add(new Word("Binti","Daughter",R.drawable.family_daughter));
+        Words.add(new Word("Kaka mkubwa","Older brother",R.drawable.family_older_brother));
+        Words.add(new Word("Kaka mdogo","Younger brother",R.drawable.family_younger_brother));
+        Words.add(new Word("Dada Mkubwa","Older sister",R.drawable.family_older_sister));
+        Words.add(new Word("Dada mdogo","Younger sister",R.drawable.family_younger_sister));
+        Words.add(new Word("bibi","Grandmother",R.drawable.family_grandmother));
+        Words.add(new Word("Babu","Grangfather",R.drawable.family_grandfather));
 
         //Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
         // simple_list_item_1.xml layout resource defined in the Android framework.
         // This list item layout contains a single {@link TextView}, which the adapter will set to
         // display a single word.
-        WordAdapter Adapter = new WordAdapter(this,Words);
+        WordAdapter Adapter = new WordAdapter(this,Words,R.color.category_family);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the

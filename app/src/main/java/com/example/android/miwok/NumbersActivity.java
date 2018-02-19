@@ -32,16 +32,16 @@ public class NumbersActivity extends AppCompatActivity {
         // Create a list of words
         ArrayList<Word> Words = new ArrayList<Word>();
         //create a new object word
-        Words.add(new Word("Moja","One"));
-        Words.add(new Word("Mbili","Two"));
-        Words.add(new Word("Tatu","Three"));
-        Words.add(new Word("Nne","Four"));
-        Words.add(new Word("Tano","Five"));
-        Words.add(new Word("Sita","Six"));
-        Words.add(new Word("Saba","Seven"));
-        Words.add(new Word("Nane","Eight"));
-        Words.add(new Word("Tisa","Nine"));
-        Words.add(new Word("Kumi","Ten"));
+        Words.add(new Word("Moja","One", R.drawable.number_one));
+        Words.add(new Word("Mbili","Two", R.drawable.number_two));
+        Words.add(new Word("Tatu","Three", R.drawable.number_three));
+        Words.add(new Word("Nne","Four", R.drawable.number_four));
+        Words.add(new Word("Tano","Five", R.drawable.number_five));
+        Words.add(new Word("Sita","Six", R.drawable.number_six));
+        Words.add(new Word("Saba","Seven", R.drawable.number_seven));
+        Words.add(new Word("Nane","Eight", R.drawable.number_eight));
+        Words.add(new Word("Tisa","Nine", R.drawable.number_nine));
+        Words.add(new Word("Kumi","Ten", R.drawable.number_ten));
 
 
 
@@ -50,7 +50,7 @@ public class NumbersActivity extends AppCompatActivity {
         // simple_list_item_1.xml layout resource defined in the Android framework.
         // This list item layout contains a single {@link TextView}, which the adapter will set to
         // display a single word.
-        WordAdapter Adapter = new WordAdapter(this,Words);
+        WordAdapter Adapter = new WordAdapter(this,Words,R.color.category_numbers);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
